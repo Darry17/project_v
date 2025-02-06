@@ -18,6 +18,17 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    document.querySelectorAll('.valentines').forEach(item => {
+        item.addEventListener('click', function () {
+            document.getElementById('message').classList.toggle('show');
+        });
+    });
+    
+    document.getElementById('closeMessageBtn').addEventListener('click', function () {
+        document.getElementById('message').classList.remove('show');
+    });
+    
+
     // Close button functionality
     closeButton.addEventListener("click", function () {
         messageSection.classList.remove("show"); // Hide message with fade-out effect
@@ -58,4 +69,17 @@ closeMessageBtn.addEventListener('click', () => {
     messageSection.classList.add('hidden');
 });
 
+
+document.addEventListener("DOMContentLoaded", function () {
+    const galleryItems = document.querySelectorAll(".gallery-item");
+
+    galleryItems.forEach(item => {
+        item.addEventListener("click", function () {
+            const overlay = this.querySelector(".overlay");
+
+            // Toggle overlay visibility with transition
+            overlay.classList.toggle("show");
+        });
+    });
+});
 
