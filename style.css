@@ -370,11 +370,11 @@ button:hover {
 
 .gallery-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Default: 4 columns on large screens */
+    grid-template-columns: repeat(1, 1fr); /* Default: 4 columns on large screens */
     gap: 15px;
     padding: 0 20px;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1000px;
 }
 
 .gallery-item {
