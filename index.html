@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.container').mouseenter(function () {
+                $('.card').stop().animate({
+                    top: '-90px'
+                }, 'slow');
+            }).mouseleave(function () {
+                $('.card').stop().animate({
+                    top: 0
+                }, 'slow');
+            });
+        });
+    </script>
+
+    <title>Valentines</title>
+</head>
+
+<body>
+    <section id="landing">
+        <h1>For Athena...</h1>
+
+        <button id="showMessageBtn">Click Me</button>
+
+        <section id="message" class="hidden">
+            <h2>I love you</h2>
+            <p id="valentineMessage"></p>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/30C1QoBTttoFh6BI0psFrr?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <button id="closeMessageBtn">Close</button>
+        </section>
+    </section>
+    
+    <section id="card">
+        <div class="container">  
+            <div class="valentines">
+                <div class="envelope"></div>
+                <div class="front"></div>
+                <div class="card">
+                <div class="text">Happy</br> Valentine's</br> Day! </br> I love you, </br>Han</div>
+                <div class="heart"</div>
+            </div>
+    
+            <div class="hearts">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+                <div class="four"></div>
+                <div class="five"></div>
+            </div>
+    
+            </div>
+            <div class="shadow"></div>
+        </div>
+    </section>
+<!-- Valentine Gallery Section -->
+<section id="gallery">
+    <h2>Our Time Together~~~</h2>
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <div class="overlay">
+                <p class="overlay-text">Snapped to update papa ko, turned out to be one of my favourite picture of us</p>
+            </div>
+
+            <img src="img/picture-1.jpg" alt="Valentine Image 1">
+        </div>
+
+        <div class="gallery-item">
+            <div class="overlay">
+                <p class="overlay-text">Your wallpaper, one of your favourite picture of us together hehe</p>
+            </div>
+            <img src="img/picture-2.jpg" alt="Valentine Image 2">
+        </div>
+
+        <div class="gallery-item">
+            <div class="overlay">
+                <p class="overlay-text">This was out veryyy first picture together hanhann, this is so cute</p>
+            </div>
+            <img src="img/picture-3.jpg" alt="Valentine Image 3">
+        </div>
+
+        <div class="gallery-item">
+            <div class="overlay">
+                <p class="overlay-text">Cute natin hereee, matching outfit usss</p>
+            </div>
+            <img src="img/picture-4.jpg" alt="Valentine Image 4">
+        </div>
+
+        <div class="gallery-item">
+            <div class="overlay">
+                <p class="overlay-text">Family Pictureee!! with Hannah and baby poohpooh and mean poohpohh</p>
+            </div>
+            <img src="img/picture-5.jpg" alt="Valentine Image 4">
+        </div>
+
+        <div class="gallery-item">
+            <div class="overlay">
+                <p class="overlay-text">Sweet natin heree, parang mag bf/gf na hehe</p>
+            </div>
+            <img src="img/picture-6.jpg" alt="Valentine Image 4">
+        </div>
+
+        <div class="gallery-item">
+            <div class="overlay">
+                <p class="overlay-text">OUR FIRST MOVIE TOGETHER SA NUVALIII TAS ANG MAHAL NG TICKET SHETTT</p>
+            </div>
+            <img src="img/picture-7.jpg" alt="Valentine Image 4">
+        </div>
+
+        <div class="gallery-item">
+            <div class="overlay">
+                <p class="overlay-text">TALAGANG PIPICUTRE-AN KO TO, 580 ISANG TICKET EH AHAHAHHA BUT IT'S OKI, I LOVE YOUUU</p>
+            </div>
+            <img src="img/picture-8.jpg" alt="Valentine Image 4">
+        </div>
+    </div>
+</section>
+</body>
+</html>
